@@ -15,7 +15,7 @@ let uiSelectedEffect = {};
 let errorOccurs = false;
 //Sample video effect
 function videoFrameHandler(videoFrame, notifyVideoProcessed, notifyError) {
-  if (appliedEffect.proportion != 0) {
+  if (uiSelectedEffect.proportion != 0) {
     const maxLen =
       (videoFrame.height * videoFrame.width) /
         Math.max(1, appliedEffect.proportion) - 4;
